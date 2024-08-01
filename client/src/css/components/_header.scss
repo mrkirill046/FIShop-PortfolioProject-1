@@ -1,0 +1,112 @@
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  z-index: 100;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.4);
+  position: fixed;
+  min-width: 100%;
+  top: 0;
+  backdrop-filter: blur(10px);
+  transition: all var(--transition-duration) ease-in-out;
+
+  @include tablet {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: center;
+    color: var(--color-gray);
+
+    &-link {
+      font-size: 18px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      @include hover {
+        color: var(--color-green);
+      }
+    }
+
+    &-list,
+    &-list_buttons {
+      display: flex;
+      align-items: center;
+      column-gap: 40px;
+
+      @include tablet {
+        column-gap: 18px;
+      }
+    }
+
+    &-list_buttons {
+      column-gap: 15px;
+    }
+
+    &-search {
+      cursor: pointer;
+      border: 1px solid var(--color-yellow);
+      border-radius: 50%;
+      padding: 10px;
+      background: transparent;
+
+      @include hover {
+        background: var(--color-yellow);
+      }
+    }
+
+    &-image {
+      filter: invert(63%) sepia(23%) saturate(4702%) hue-rotate(61deg) brightness(91%) contrast(91%);
+
+      @include hover {
+        filter: invert(63%) sepia(23%) saturate(4702%) hue-rotate(61deg) brightness(91%) contrast(60%);
+      }
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__burger-button {
+    @include reset-button;
+
+    width: 48px;
+    aspect-ratio: 1;
+    position: relative;
+    border-radius: 7px;
+    color: var(--color-green);
+
+    @include hover {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    &::after {
+      @include abs-center;
+
+      content: '';
+      width: 50%;
+      height: 2px;
+      background-color: var(--color-green);
+      border-radius: 50%;
+      box-shadow: 0 -8px, 0 8px;
+    }
+  }
+}
+
+.logo__text {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--color-green);
+  font-family: var(--font-family-title), sans-serif;
+}
