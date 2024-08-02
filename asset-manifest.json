@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/1-fishop/static/css/main.5a5022e4.css",
+    "main.js": "/1-fishop/static/js/main.dcf307d7.js",
+    "static/js/453.e093416e.chunk.js": "/1-fishop/static/js/453.e093416e.chunk.js",
+    "static/js/810.a05fc974.chunk.js": "/1-fishop/static/js/810.a05fc974.chunk.js",
+    "static/js/643.bf7a6139.chunk.js": "/1-fishop/static/js/643.bf7a6139.chunk.js",
+    "index.html": "/1-fishop/index.html",
+    "main.5a5022e4.css.map": "/1-fishop/static/css/main.5a5022e4.css.map",
+    "main.dcf307d7.js.map": "/1-fishop/static/js/main.dcf307d7.js.map",
+    "453.e093416e.chunk.js.map": "/1-fishop/static/js/453.e093416e.chunk.js.map",
+    "810.a05fc974.chunk.js.map": "/1-fishop/static/js/810.a05fc974.chunk.js.map",
+    "643.bf7a6139.chunk.js.map": "/1-fishop/static/js/643.bf7a6139.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a5022e4.css",
+    "static/js/main.dcf307d7.js"
+  ]
+}
