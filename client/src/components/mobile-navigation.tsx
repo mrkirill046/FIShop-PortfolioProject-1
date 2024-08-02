@@ -27,7 +27,7 @@ export default function MobileNavigation() {
                     <li className={'header__menu-item'}>
                         <button className={'header__menu-search'}>
                             <img
-                                src='/images/nav/search.svg'
+                                src='/icons/nav/search.svg'
                                 alt='search'
                                 loading={'lazy'} width={25} height={25}
                             />
@@ -36,7 +36,7 @@ export default function MobileNavigation() {
                     <li className={'header__menu-item'}>
                         <a href='/cart' className={'header__menu-image'}>
                             <img
-                                src='/images/nav/cart.svg'
+                                src='/icons/nav/cart.svg'
                                 alt='cart'
                                 loading={'lazy'} width={50} height={50}
                             />
@@ -45,7 +45,7 @@ export default function MobileNavigation() {
                     <li className={'header__menu-item'}>
                         <a href='/profile' className={'header__menu-image'}>
                             <img
-                                src='/images/nav/profile.svg'
+                                src='/icons/nav/profile.svg'
                                 alt='profile'
                                 loading={'lazy'} width={50} height={50}
                             />

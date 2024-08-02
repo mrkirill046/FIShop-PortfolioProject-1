@@ -8,7 +8,7 @@ const loadWithDelay = <T extends React.ComponentType<any>>(importFunc: () => Pro
     new Promise<DefaultExportType<T>>((resolve) => {
         setTimeout(() => {
             importFunc().then(resolve)
-        }, 200)
+        }, 255)
     })
 
 export const lazyWithDelay = <T extends React.ComponentType<any>>(importFunc: () => Promise<DefaultExportType<T>>) =>
@@ -40,6 +40,7 @@ export const loader_text_style: CSSProperties = {
     marginBottom: '-45vh',
     fontFamily: 'monospace',
     fontSize: '24px',
+    color: '#42b40b'
 }
 
 export const title = 'FIShop |'

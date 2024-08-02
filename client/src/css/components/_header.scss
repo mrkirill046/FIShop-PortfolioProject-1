@@ -54,13 +54,13 @@
 
     &-search {
       cursor: pointer;
-      border: 1px solid var(--color-yellow);
+      border: 1px solid var(--color-orange);
       border-radius: 50%;
       padding: 10px;
       background: transparent;
 
       @include hover {
-        background: var(--color-yellow);
+        background: var(--color-orange);
       }
     }
 

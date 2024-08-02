@@ -9,6 +9,10 @@ import Footer from './components/footer'
 import MobileNavigation from './components/mobile-navigation'
 
 const Home = lazyWithDelay(() => import('./pages/home'))
+const Shop = lazyWithDelay(() => import('./pages/shop'))
+const About = lazyWithDelay(() => import('./pages/about'))
+const Contacts = lazyWithDelay(() => import('./pages/contacts'))
+
 const Page404 = lazyWithDelay(() => import('./pages/errors/404'))
 
 export default function App() {
@@ -19,12 +23,15 @@ export default function App() {
             <Suspense fallback={
                 <main style={loader_container_style}>
                     <h4 style={loader_text_style}>Загрузка...</h4>
-                    <BarLoader cssOverride={loader_style} color='#000'/>
+                    <BarLoader cssOverride={loader_style} color='#42b40b'/>
                 </main>
             }>
 
                 <Routes>
                     <Route path='/' element={<Home/>}/>
+                    <Route path='/shop' element={<Shop/>}/>
+                    <Route path='/about' element={<About/>}/>
+                    <Route path='/contacts' element={<Contacts/>}/>
 
                     <Route path='*' element={<Page404/>}/>
                 </Routes>

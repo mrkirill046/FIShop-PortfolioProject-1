@@ -1,13 +1,11 @@
-@import
-  'normalize',
-  'mixins',
-  'media',
-  'variables',
-  'utils',
-  'globals';
+@import 'normalize';
+@import 'mixins';
+@import 'media';
+@import 'variables';
+@import 'utils';
+@import 'globals';
 
-
-@import
-  'components/header',
-  'components/mobile-overlay',
-  'components/cross-button';
+@import 'components/header';
+@import 'components/mobile-overlay';
+@import 'components/hero';
+@import 'components/hero-slider';

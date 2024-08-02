@@ -1,0 +1,146 @@
+.hero {
+  @include flex-center;
+
+  background: url(../../public/images/hero-img.webp) no-repeat center center;
+  background-size: cover;
+  min-height: 55vh;
+  margin-top: 200px;
+
+  @include desktop {
+    margin-top: 150px;
+  }
+
+  @include tablet {
+    margin-top: 0;
+    flex-direction: column;
+  }
+
+  @include mobile-s {
+    margin-top: -50px;
+  }
+
+  &__text-error {
+    color: red;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 25px;
+
+    @include mobile-s {
+      margin-left: 75px;
+      margin-top: -45px;
+    }
+  }
+
+  &__block {
+    margin: 30px 50px;
+
+    @include desktop {
+      margin: 15px 5px;
+    }
+  }
+
+  &__title {
+    color: var(--color-green);
+    font-family: var(--font-family-title), sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    margin-bottom: 70px;
+    max-width: 500px;
+
+    @include desktop {
+      font-size: 35px;
+    }
+
+    @include mobile-s {
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+  }
+
+  &__subtitle {
+    color: var(--color-orange-alt);
+    font-family: var(--font-family-title), sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+
+    @include desktop {
+      font-size: 19px;
+    }
+
+    @include tablet {
+      margin-top: 30px;
+    }
+
+    @include mobile-s {
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+  }
+
+  &__subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    form {
+      display: flex;
+    }
+
+    input {
+      border: 2px solid var(--color-orange);
+      border-radius: 35px 0 0 35px;
+      flex-grow: 1;
+      height: 60px;
+      min-width: 400px;
+      outline: none;
+      padding: 10px 10px 10px 25px;
+
+      @include desktop {
+        min-width: 300px;
+      }
+
+      @include tablet {
+        min-width: 500px;
+      }
+
+      @include mobile {
+        min-width: 300px;
+      }
+
+      @include mobile-s {
+        min-width: 100px;
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-top: -50px;
+      }
+    }
+
+    button {
+      background-color: var(--color-green);
+      color: var(--color-white);
+      height: 60px;
+      border: 2px solid var(--color-orange);
+      border-radius: 35px;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-left: -25px;
+
+      @include hover {
+        background-color: var(--color-green-alt);
+      }
+
+      @include mobile-s {
+        margin-left: -75px;
+        margin-top: -20px;
+      }
+    }
+
+    button:disabled {
+      cursor: not-allowed;
+
+      @include hover {
+        background-color: var(--color-green);
+      }
+    }
+  }
+}

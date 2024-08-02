@@ -1,0 +1,56 @@
+.slider {
+  @include flex-center;
+
+  font-size: 40px;
+  font-family: 'Source Code Pro', monospace;
+  color: var(--color-white);
+
+  &__image {
+    flex-shrink: 0;
+  }
+
+  &__info {
+    position: absolute;
+    color: var(--color-white);
+    font-family: var(--font-family-base), sans-serif;
+    padding: 8px 24px;
+    font-size: 25px;
+    background: linear-gradient(rgba(255, 181, 36, 0.7), rgba(255, 181, 36, 0.7));
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  &__button {
+    @include flex-center;
+
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--color-white);
+    opacity: 0.4;
+    color: var(--color-white);
+    background: var(--color-green);
+
+    @include hover {
+      opacity: 0.9;
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+
+  .prev {
+    position: relative;
+    left: 70px;
+  }
+
+  .next {
+    position: relative;
+    right: 70px;
+  }
+}

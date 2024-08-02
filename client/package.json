@@ -2,7 +2,7 @@
     "name": "portfolio_project_1",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://mrkirill046.github.io/FIShop-PortfolioProject-1",
+    "homepage": "https://1.mrkirill046.qwy-game.ru/",
     "dependencies": {
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
@@ -15,8 +15,7 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject",
-        "deploy": "react-scripts build && gh-pages -d build"
+        "eject": "react-scripts eject"
     },
     "eslintConfig": {
         "extends": [
